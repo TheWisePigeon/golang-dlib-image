@@ -3,7 +3,7 @@ FROM ubuntu:latest
 # Install dlib and dependencies
 RUN apt-get update
 RUN apt-get install -y wget git gcc
-RUN apt-get install libdlib-dev libblas-dev libatlas-base-dev liblapack-dev libjpeg-turbo8-dev
+RUN apt-get install -y libdlib-dev libblas-dev libatlas-base-dev liblapack-dev libjpeg-turbo8-dev
 
 # Install specific version of go
 ARG GO_VERSION
